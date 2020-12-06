@@ -1,0 +1,38 @@
+//right click --> GitBash Here
+git --version
+git status
+git init // to initialize this repo as Git repo & makes a hidden git file
+git status
+git add . //moves codes from working directory to staging area
+git config --global user.email "knambudiri4@gmail.com" //for every rep now on
+git config --global user.name "AshwiniNam" //for every rep now on
+// on excluding --global this is valid only for the current repo
+git commit -m "Version 1"
+git log // to view the changes made
+
+
+//changes made
+git status
+git add .
+git commit -m "Version 2" //snapshot
+git log // to view the changes made
+
+//use SSH for Git bash
+git remote add origin https://github.com/AshwiniNam/Kotin.git
+
+//to push the code
+//set SSH key ...setting-->SSH key
+git push -u origin main
+
+//to pull
+git pull origin main
+
+// to understand the difference between two files before adding
+git diff kotlin.txt //that is the file name
+
+// to understand the difference between two files after adding
+git diff --staged kotlin.txt 
+
+//taking back to old version
+git reset kotlin.txt //1 file
+git checkout . // two or more files to reset
